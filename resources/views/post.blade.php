@@ -5,3 +5,6 @@
 @section('title')
     about
 @endsection
+@push('examplecss')
+    <link rel="stylesheet" href="examplecss.css">
+@endpush

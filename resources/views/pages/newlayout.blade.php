@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document- @yield('title',"website")</title>
     <link rel="stylesheet" href="../index.css">
+    @stack("examplecss")
 </head>
 <body>
     <nav>
@@ -41,4 +42,5 @@
         this is a footer part of all
     </footer>
 </body>
+@stack('scripts')
 </html>
