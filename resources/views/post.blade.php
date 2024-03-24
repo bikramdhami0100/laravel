@@ -1,1 +1,7 @@
-<h1>this is bikram dhami</h1>
+@extends('pages.newlayout')
+@section('contents')
+     this is contents form post page
+@endsection
+@section('title')
+    about
+@endsection

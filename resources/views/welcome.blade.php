@@ -1,2 +1,11 @@
-<h1>home page  </h1>
-<a href="/hello">post</a>
+@extends('pages.newlayout')
+@section('contents')
+    home page 
+@endsection
+{{-- @section('title')
+    home
+@endsection --}}
+@section('sidebar')
+   @parent
+    this is sidebar contents
+@endsection
