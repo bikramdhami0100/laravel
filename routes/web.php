@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+function getDetail(){
+    return [
+        1=>["name"=>"bikram","cast"=>"dhami","age"=>23]
+    ];
+}
 Route::get('/', function () {
     return view('welcome');
 });
@@ -23,5 +27,9 @@ Route::redirect('/post', '/',301);
 // });
 // });
 Route::fallback(function(){
-    return "hello this is bikram dhami";
+    return "this page is not available";
+});
+Route::get('users/{id}', function ($id) {
+  $users=getDetail();
+    return view("users",["userid"=>$id,"userdetail"=>$users]);
 });
